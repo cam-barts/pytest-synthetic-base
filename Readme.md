@@ -44,7 +44,7 @@ curl -fsS -m 10 --retry 5 --data-raw "$m" https://hc-ping.com/1234-abcd/$?
 Then create a new docker image
 
 ```Dockerfile
-FROM synthetic-base-image
+FROM cambarts/pytest-synthetic-base
 
 RUN apt-get install -y cron
 
